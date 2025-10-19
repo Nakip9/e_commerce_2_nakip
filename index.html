@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="siteTitle">AutoDrive Market</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="brand" data-translate="brand">AutoDrive Market</div>
+        <nav>
+            <button class="lang-switch" data-lang="en">English</button>
+            <button class="lang-switch" data-lang="ar">العربية</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1 data-translate="heroTitle">Find your dream car in minutes.</h1>
+                <p data-translate="heroSubtitle">Browse our curated collection of new and pre-owned vehicles ready for immediate delivery.</p>
+                <a class="cta" href="#inventory" data-translate="browseInventory">Browse inventory</a>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <div class="sun"></div>
+                <div class="car"></div>
+            </div>
+        </section>
+
+        <section id="inventory" class="inventory">
+            <h2 data-translate="inventoryTitle">Featured vehicles</h2>
+            <div class="card-grid">
+                <article class="car-card">
+                    <img src="https://images.unsplash.com/photo-1549921296-3e85d1ce9f44?auto=format&fit=crop&w=800&q=80" alt="Sedan" loading="lazy">
+                    <h3 data-translate="sedanName">CityLine Sedan 2023</h3>
+                    <p class="price" data-translate="sedanPrice">$28,500</p>
+                    <ul>
+                        <li data-translate="sedanFeature1">1.5L turbo engine</li>
+                        <li data-translate="sedanFeature2">Adaptive cruise control</li>
+                        <li data-translate="sedanFeature3">Panoramic roof</li>
+                    </ul>
+                    <button class="primary" data-translate="bookTestDrive">Book a test drive</button>
+                </article>
+                <article class="car-card">
+                    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80" alt="SUV" loading="lazy">
+                    <h3 data-translate="suvName">TrailMaster SUV 4x4</h3>
+                    <p class="price" data-translate="suvPrice">$44,900</p>
+                    <ul>
+                        <li data-translate="suvFeature1">3.0L V6 power</li>
+                        <li data-translate="suvFeature2">360° camera system</li>
+                        <li data-translate="suvFeature3">Leather interior</li>
+                    </ul>
+                    <button class="primary" data-translate="bookTestDrive">Book a test drive</button>
+                </article>
+                <article class="car-card">
+                    <img src="https://images.unsplash.com/photo-1511391409810-388e94c41f6c?auto=format&fit=crop&w=800&q=80" alt="Electric Car" loading="lazy">
+                    <h3 data-translate="evName">VoltX Electric Hatch</h3>
+                    <p class="price" data-translate="evPrice">$35,200</p>
+                    <ul>
+                        <li data-translate="evFeature1">400 km range</li>
+                        <li data-translate="evFeature2">Fast charging 30 min</li>
+                        <li data-translate="evFeature3">Advanced driver assist</li>
+                    </ul>
+                    <button class="primary" data-translate="bookTestDrive">Book a test drive</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="services">
+            <h2 data-translate="servicesTitle">Services tailored to you</h2>
+            <div class="service-grid">
+                <article>
+                    <h3 data-translate="financingTitle">Flexible financing</h3>
+                    <p data-translate="financingText">Choose from a range of bank and in-house financing plans with instant approval.</p>
+                </article>
+                <article>
+                    <h3 data-translate="warrantyTitle">Certified warranty</h3>
+                    <p data-translate="warrantyText">Every vehicle includes a 2-year warranty and free roadside assistance.</p>
+                </article>
+                <article>
+                    <h3 data-translate="deliveryTitle">Nationwide delivery</h3>
+                    <p data-translate="deliveryText">We deliver to all major cities within 72 hours of completing your purchase.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-text">
+                <h2 data-translate="contactTitle">Ready to get behind the wheel?</h2>
+                <p data-translate="contactSubtitle">Leave your details and our team will contact you within one business day.</p>
+            </div>
+            <form class="contact-form">
+                <label>
+                    <span data-translate="nameLabel">Full name</span>
+                    <input type="text" name="name" placeholder="Alex Driver" data-translate="namePlaceholder" required>
+                </label>
+                <label>
+                    <span data-translate="phoneLabel">Phone number</span>
+                    <input type="tel" name="phone" placeholder="+1 555 0100" data-translate="phonePlaceholder" required>
+                </label>
+                <label>
+                    <span data-translate="modelLabel">Preferred model</span>
+                    <select name="model">
+                        <option data-translate="modelOptionSedan" value="sedan">CityLine Sedan</option>
+                        <option data-translate="modelOptionSUV" value="suv">TrailMaster SUV</option>
+                        <option data-translate="modelOptionEV" value="ev">VoltX Electric</option>
+                    </select>
+                </label>
+                <label>
+                    <span data-translate="messageLabel">Message</span>
+                    <textarea name="message" rows="4" placeholder="I would like to schedule a test drive next week." data-translate="messagePlaceholder"></textarea>
+                </label>
+                <button type="submit" class="primary" data-translate="submitButton">Send request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p data-translate="footerText">© 2024 AutoDrive Market. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#inventory" data-translate="footerInventory">Inventory</a>
+            <a href="#contact" data-translate="footerContact">Contact</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
